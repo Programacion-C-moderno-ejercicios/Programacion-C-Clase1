@@ -7,12 +7,23 @@
  * una 'a' seguida de una 's' y devolvemos 0.
 
 /* Bibliotecas a incluir */
+#include <stdio.h>
 
 int main()
 {
 	/* Declaración de variables */
+	char cadena[10] = "asimetria";
+	int i;
 
 	/* Código usando condicional for */
-
+	for(i = 0; cadena[i] != '\0'; i++){
+		if(cadena[i]=='a' && cadena[i+1]){
+			goto es_s;
+		}
+	}
+	printf("No tenemos una a seguida de una s\n");
+	return 0;
 	/* Declaracion de etiquetas */
+es_s:	printf("Tenemos una a seguida de una s\n");
+	return 1;
 }

@@ -9,6 +9,10 @@
 /* Zona para incluir las bibliotecas o cabeceras */
 
 
-
-
 /* Declaracion de la funcion */
+int es_par(int numero)
+{
+	int res = 1;
+	if(numero%2) res = 0;
+	return res;
+}
